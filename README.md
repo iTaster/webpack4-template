@@ -1,6 +1,6 @@
 # web
 
-> A Vue.js project
+> Vue-cli Webpack4.x 模板
 
 ## Build Setup
 
