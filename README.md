@@ -10,34 +10,9 @@
 ```bash
     npm install --save-dev mini-css-extract-plugin
 ```
+安装之后发现在 `build` 的时候报错 =,=
 
-
-**webpack.config.js**
-
-```js
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-module.exports = {
-  plugins: [
-    new MiniCssExtractPlugin({
-      // Options similar to the same options in webpackOptions.output
-      // both options are optional
-      filename: "[name].css",
-      chunkFilename: "[id].css"
-    })
-  ],
-  module: {
-    rules: [
-      {
-        test: /\.css$/,
-        use: [
-          MiniCssExtractPlugin.loader,
-          "css-loader"
-        ]
-      }
-    ]
-  }
-}
-```
+So 不要 `hash` 了，改成 `min` 了，酱编译出来的文件都是 `xx.min.css` / `xx.min.js`   
 
 ## Build Setup
 
