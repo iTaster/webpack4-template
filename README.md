@@ -9,6 +9,8 @@
 
 4. 输出格式类似 `[name].[chunkhash]` 的要把 `[chunkhash]` 改为 `[hash]` ，否则在 `build` 时候会报错， [Webpack4.2之后不在支持  extract-text-webpack-plugin](https://github.com/webpack-contrib/extract-text-webpack-plugin/issues/763)，作者建议使用 [mini-css-extract-plugin](https://github.com/webpack-contrib/mini-css-extract-plugin)
 
+5. 如果代码在服务器上跑不想要地址栏里有 `#/` 需要在 `router/index.js` 把 `mode: 'history'` 注解删除(另需要后端配置，否则页面刷新404)；如果页面需用到锚点跳转到指定位置，把 `scrollBehavior` 注解删除即可。
+
 ```bash
     npm install --save-dev mini-css-extract-plugin
 ```
