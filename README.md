@@ -1,5 +1,5 @@
 
-# Vue-cli Webpack4.x
+# Vue-cli Webpack4.x 模板
 
 1. 如果要上传`dist`文件夹，删除忽略文件配置(`.gitignore`文件)里 `/dist` 即可
 
@@ -20,25 +20,29 @@ So 不要 `hash` 了，改成 `min` 了，酱编译出来的文件都是 `xx.min
 
 
 
-
-
-
-
 ## Build Setup
 
 ``` bash
-# install dependencies
+# 安装依赖
 npm install
 
-# serve with hot reload at localhost:8080
+# 检测模块
+npm outdated
+
+# 更新模块
+npm update
+
+# 编译开发环境
 npm run dev
 
-# build for production with minification
+# 编译生产环境
 npm run build
 
 # build for production and view the bundle analyzer report
 npm run build --report
 ```
+注解：<sup>1</sup>这个命令会检查你安装的模块，并告诉你哪些模块已经过期了，有了新的版本。具体的信息则包括该模块你当前安装的版本（Current）、你应该要更新到的版本（Wanted）以及仓库中最新的版本（Latest）。如果发现标红的建议更新到最新版本。
+
 
 ## Other
 ```bash
