@@ -16,9 +16,6 @@
   <a href="https://github.com/vuejs/vue">
     <img src="https://img.shields.io/badge/vue-2.5.16-brightgreen.svg" alt="vue">
   </a>
-  <a href="javascript:;" rel="nofollow">
-    <img src="https://img.shields.io/continuousphp/git-hub/doctrine/dbal/master.svg" alt="Build Status">
-  </a>
 </p>
    
 
@@ -34,7 +31,7 @@
 * [执照](#执照)
 
 # 概括
-#### 基于 vue-cli 的 [Webpack4.x 模板](https://github.com/iTaster/webpack4-template).
+### 基于 vue-cli 的 [Webpack4.x 模板](https://github.com/iTaster/webpack4-template).
 
 ## 安装
 ```
