@@ -51,10 +51,15 @@ npm outdated
 
 # 更新模块
 npm update
+
+# 删除 node_modules 文件
+npm install rimraf -g
+rimraf node_modules
 ```
 `npm outdated` 命令会检查你安装的模块，并告诉你哪些模块已经过期了。
 
 具体信息包括该：当前安装的版本（Current）、你应该要更新到的版本（Wanted）以及仓库中最新的版本（Latest）。
+
 
 
 ## 配置
