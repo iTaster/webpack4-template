@@ -11,7 +11,7 @@
       <img src="https://img.shields.io/badge/npm->=3.0.0-brightgreen.svg" alt="npm">
   </a>
   <a href="javascript:;" rel="nofollow">
-      <img src="https://img.shields.io/badge/webpack-4.8.1-brightgreen.svg" alt="webpack">
+      <img src="https://img.shields.io/badge/webpack-4.8.3-brightgreen.svg" alt="webpack">
   </a>
   <a href="https://github.com/vuejs/vue">
     <img src="https://img.shields.io/badge/vue-2.5.16-brightgreen.svg" alt="vue">
@@ -83,7 +83,7 @@ rimraf node_modules
 
 ## 配置
 
-1. 如果要上传 `dist` 文件夹，删除忽略文件配置(`.gitignore`文件)里 `/dist` 即可；
+1. 如果要上传 `dist` 文件夹，删除忽略文件配置(`.gitignore`文件)里 `/dist` 即可。
 
 2. 默认被 `webpack` 编译处理过的资源文件都会存放在 `static` 文件夹下，如果你只想存放在根文件目录下，修改 `config/index.jx` 下的 `build.assetsSubDirectory` 参数留空。但不推荐！这样在打包时候部分图片路径会出错，建议小于10kb的资源和一些svg icon（一般不会改动的东西）放在  `src/assets` 文件夹内，其他的放在 `static` 文件夹里。
 
@@ -91,6 +91,7 @@ rimraf node_modules
 
 4. 如果代码在服务器上跑不想要地址栏里有 `#/` 需要在 `router/index.js` 把 `mode: 'history'` 注解删除(另需要后端配置，否则页面刷新404)；如果页面需用到锚点跳转到指定位置，把 `scrollBehavior` 注解删除即可。
 
+5. 自带 `autoprefixer` 插件， 在 vue 文件直接写 css 代码会自动添加前缀。
 
 ## 架构
 
