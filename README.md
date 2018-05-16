@@ -19,12 +19,8 @@
   <a href="javascript:;" rel="nofollow">
     <img src="https://img.shields.io/continuousphp/git-hub/doctrine/dbal/master.svg" alt="Build Status">
   </a>
-
 </p>
    
-========================================
-
-
 
 **索引**
 
