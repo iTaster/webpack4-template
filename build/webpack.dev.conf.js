@@ -10,9 +10,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin')
 const portfinder = require('portfinder')
 
-function resolve (dir) {
-  return path.join(__dirname, '..', dir)
-}
 
 const HOST = process.env.HOST
 const PORT = process.env.PORT && Number(process.env.PORT)
@@ -57,8 +54,8 @@ const devWebpackConfig = merge(baseWebpackConfig, {
     new HtmlWebpackPlugin({
       filename: 'index.html',
       template: 'index.html',
-      inject: true,
-      favicon: resolve('favicon.ico'),
+      inject: true,            // true ||  'body' 默认打包生成的js 在页面 body 标签的最底部，如果想放在 head 标签内 ，把 true 改为 'head'
+      favicon: 'favicon.ico',
     }),
     // copy custom static assets
     new CopyWebpackPlugin([
