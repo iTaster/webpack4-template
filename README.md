@@ -1,7 +1,9 @@
-Vue-cli Webpack4.x 模板
-========================================
 <p align="center">
-
+  <a href="javascript:;">
+    <img width="100" src="https://raw.githubusercontent.com/iTaster/webpack4-template/master/src/assets/logo.png" alt="logo">
+  </a>
+</p>
+<p align="center">
   <a href="javascript:;" rel="nofollow">
     <img src="https://img.shields.io/badge/node->=6.0.0-brightgreen.svg" alt="node">
   </a>
@@ -19,6 +21,9 @@ Vue-cli Webpack4.x 模板
   </a>
 
 </p>
+   
+========================================
+
 
 
 **索引**
